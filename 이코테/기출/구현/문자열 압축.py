@@ -29,3 +29,4 @@ a = [
 
 for x in a:
     print(solution(x))
+    
