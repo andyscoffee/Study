@@ -12,7 +12,9 @@ def bin(array, start, end):
             end = mid - 1
         else:
             start = mid + 1
+            
 res = bin(data, 0, len(data))
+
 if res == None:
   print('-1')
 else:
