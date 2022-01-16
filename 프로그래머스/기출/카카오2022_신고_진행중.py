@@ -4,7 +4,7 @@ report = ["muzi frodo","apeach frodo","frodo neo","muzi neo","apeach muzi"]
 id_list = ["muzi", "frodo", "apeach", "neo"]
 k = 2
 # 까지 입력 조건
-check_list = []  # 제재가 확정된 사람을 저장할 배열
+check_list = []  # 정지가 확정된 사람을 저장할 배열
 answer = [0] * (len(id_list))
 
 dic = {}
@@ -28,9 +28,9 @@ for id in range(len(id_list)):  # 유저 목록만큼 반복
               # 신고당한 횟수가 k회를 넘고 정지 확정 리스트에 들어가있지 않다면
                 check_list.append(id_list[id]) # 확정 리스트에 삽입
 
-for reported in check_list:  
-    for j in range(len(id_list)): 
-        if reported in list(dic.values())[j]: 
+for reported in check_list:  # 정지 확정리스트를 순회하면서
+    for j in range(len(id_list)): # id의 갯수만큼
+        if reported in list(dic.values())[j]: # 신고한 사람의 메일 카운트 증가
             answer[j] += 1
 
 print(answer)
