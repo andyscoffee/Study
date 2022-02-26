@@ -1,0 +1,11 @@
+def solution(n, lost, reserve):
+    answer = 0
+    n_res = set(reserve) - set(lost)
+    n_los = set(lost) - set(reserve)
+    for i in n_res:
+        if i-1 in n_los:
+            n_los.remove(i-1)
+        elif i+1 in n_los:
+            n_los.remove(i+1)
+    answer = n - len(n_los)
+    return answer
