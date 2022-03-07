@@ -1,0 +1,18 @@
+from collections import deque
+def solution(people, limit):
+    answer = 0
+    data = deque(sorted(people))
+    
+    while data:
+        if len(data) <= 1:
+            data.pop()
+            answer += 1
+            break
+        if data[0] + data[-1] <= limit:
+            data.pop()
+            data.popleft()
+        else:
+            data.pop()
+        answer += 1
+        
+    return answer
