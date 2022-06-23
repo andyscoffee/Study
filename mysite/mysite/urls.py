@@ -21,3 +21,5 @@ urlpatterns = [
     path('polls/', include('polls.urls')),
     path('admin/', admin.site.urls),
 ]
+
+# 프로젝트에 application을 연결하기 위해서는 url을 연결해줘야 함

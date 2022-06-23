@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'polls.apps.PollsConfig',  # app 등록을 위해서 모델(클래스 이름) 등록
 ]
 
 MIDDLEWARE = [
