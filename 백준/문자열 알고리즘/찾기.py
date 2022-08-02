@@ -12,7 +12,7 @@ P[1…k] = P[j-k…j-1]을 만족하는 최대의 k(≠j-1)에 대해 T의 i+j-1
 """
 
 
-def getPi():
+def getPi():  # PI리스트를 전처리하는 함수
     pi = [0 for _ in range(0, len(P))]
     j = 0
 
