@@ -85,5 +85,5 @@ print(x[p])
 q = (x%4 == 1)
 print(x[p])
 이 배열에서 3으로 나누면 나누어지고 4로 나누면 1이 남는 수를 찾아라.
-print(x[p & q])
+print(x[p & q]) p and q로 할 경우 오류 발생함
 """
