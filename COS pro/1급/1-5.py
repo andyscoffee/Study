@@ -1,6 +1,3 @@
-# You may use import as below.
-#import math
-
 def solution(n):
     # Write code here.
     dp = [0]*(n+1)
